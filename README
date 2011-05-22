@@ -1,0 +1,31 @@
+WhitePages
+=========
+
+WhitePages is a Ruby wrapper for the WhitePages.com API.
+
+WhitePages API Docs
+=========
+
+http://developer.whitepages.com/
+
+You will need to register for a Yelp API Key.
+
+INSTALLATION
+==========
+
+gem install white_pages
+
+USAGE
+==========
+
+  WhitePages.api_key = 'XXXXXXXX'
+
+  WhitePages.find_person(...)
+  WhitePages.find_business(...)
+  WhitePages.reverse_phone(...)
+  WhitePages.reverse_address(...)
+
+COPYRIGHT
+=========
+
+Copyright (c) 2011 octohq.com. See LICENSE for details.
