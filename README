@@ -18,12 +18,15 @@ gem install white_pages
 USAGE
 ==========
 
-  WhitePages.api_key = 'XXXXXXXX'
+# Set API Key
+WhitePages.api_key = 'XXXXXXXX'
 
-  WhitePages.find_person(...)
-  WhitePages.find_business(...)
-  WhitePages.reverse_phone(...)
-  WhitePages.reverse_address(...)
+WhitePages.find_person(name: 'John Doe')
+WhitePages.find_business(businessname: 'Target')
+WhitePages.reverse_phone(phone: '3334445555')
+WhitePages.reverse_address(street: '333 S. 3rd St', city: 'Los Angeles', state: 'CA')
+
+Available options can be found by generating RDoc or visiting http://developer.whitepages.com.
 
 COPYRIGHT
 =========
