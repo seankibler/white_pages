@@ -97,9 +97,9 @@ module WhitePages
       options.merge!(api_key: WhitePages.api_key, outputtype: 'JSON')
       response = self.class.get("/#{method}/#{version}", query: options)
       case response.code
-      when 400...600 then raise WhitePagesError.new(response.headers['x-mashery-error-code'])
-      else Hashie::Mash.new(response)
-      end  
+      when 200 then Hashie::Mash.new(response)
+      else raise WhitePagesError.new(response.headers['x-mashery-error-code'])
+      end
     end
   end
 end
