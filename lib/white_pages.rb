@@ -1,12 +1,10 @@
-require 'hashie'
 require 'httparty'
+require 'white_pages/client'
 
 module WhitePages
   VERSION = "0.0.1"
 
   class WhitePagesError < StandardError; end
-
-  autoload :Client, 'white_pages/client'
 
   class << self
     attr_accessor :api_key
