@@ -1,4 +1,5 @@
 require 'hashie'
+require 'httparty'
 
 module WhitePages
   class Client

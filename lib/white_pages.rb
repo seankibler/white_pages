@@ -1,4 +1,3 @@
-require 'httparty'
 require 'white_pages/client'
 
 module WhitePages
